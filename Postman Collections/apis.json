@@ -18,14 +18,15 @@
 			"response": []
 		},
 		{
-			"name": "/topics Copy",
+			"name": "/topics",
 			"id": "500597ad-9295-40e4-9781-d08d9c3d52f9",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"url": "{{host}}/topics"
 			},
 			"response": []
 		},
