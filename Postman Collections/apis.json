@@ -55,6 +55,19 @@
 				"url": "http://localhost:8080/topic/java"
 			},
 			"response": []
+		},
+		{
+			"name": "/topic/id",
+			"id": "1b134b76-9750-4724-937c-e71aea9c1d92",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/topic/java"
+			},
+			"response": []
 		}
 	]
 }
