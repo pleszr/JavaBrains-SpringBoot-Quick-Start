@@ -31,6 +31,19 @@
 			"response": []
 		},
 		{
+			"name": "/topics",
+			"id": "b9f2722f-34ea-4894-843b-cf16cd88cfdb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "{{host}}/topics"
+			},
+			"response": []
+		},
+		{
 			"name": "/topic/id",
 			"id": "0d9f1773-d430-4d99-85f3-0df743722cf7",
 			"protocolProfileBehavior": {
