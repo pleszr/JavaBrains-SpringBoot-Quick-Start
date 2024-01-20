@@ -118,6 +118,18 @@
 				}
 			],
 			"id": "b55e251c-f255-49e3-9307-0f7f42bb38ad"
+		},
+		{
+			"name": "/health",
+			"id": "d500e02d-5493-423d-9e41-0581adb24ce8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
