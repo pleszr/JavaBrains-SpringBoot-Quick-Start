@@ -6,68 +6,105 @@
 	},
 	"item": [
 		{
-			"name": "/topics",
-			"id": "a53739fa-e654-4f79-a9f2-679a35d9ea88",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
+			"name": "topics",
+			"item": [
+				{
+					"name": "/topics",
+					"id": "a53739fa-e654-4f79-a9f2-679a35d9ea88",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/topics",
+					"id": "500597ad-9295-40e4-9781-d08d9c3d52f9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{host}}/topics"
+					},
+					"response": []
+				},
+				{
+					"name": "/topics",
+					"id": "b9f2722f-34ea-4894-843b-cf16cd88cfdb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "{{host}}/topics"
+					},
+					"response": []
+				},
+				{
+					"name": "/topic/id",
+					"id": "0d9f1773-d430-4d99-85f3-0df743722cf7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/topic/java"
+					},
+					"response": []
+				},
+				{
+					"name": "/topic/id",
+					"id": "1b134b76-9750-4724-937c-e71aea9c1d92",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/topic/java"
+					},
+					"response": []
+				}
+			],
+			"id": "2cdcb0d6-abda-4330-90f7-b1b3fa9e6486"
 		},
 		{
-			"name": "/topics",
-			"id": "500597ad-9295-40e4-9781-d08d9c3d52f9",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"url": "{{host}}/topics"
-			},
-			"response": []
-		},
-		{
-			"name": "/topics",
-			"id": "b9f2722f-34ea-4894-843b-cf16cd88cfdb",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"url": "{{host}}/topics"
-			},
-			"response": []
-		},
-		{
-			"name": "/topic/id",
-			"id": "0d9f1773-d430-4d99-85f3-0df743722cf7",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": "http://localhost:8080/topic/java"
-			},
-			"response": []
-		},
-		{
-			"name": "/topic/id",
-			"id": "1b134b76-9750-4724-937c-e71aea9c1d92",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": "http://localhost:8080/topic/java"
-			},
-			"response": []
+			"name": "courses",
+			"item": [
+				{
+					"name": "/courses",
+					"id": "a1f47b0e-7509-43fc-b6cd-e38ffc8a54b5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/courses",
+					"id": "a277bf40-f775-4ecb-b18c-9d416dce3f16",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{host}}/topics"
+					},
+					"response": []
+				}
+			],
+			"id": "b55e251c-f255-49e3-9307-0f7f42bb38ad"
 		}
 	]
 }
