@@ -47,7 +47,7 @@
 					"response": []
 				},
 				{
-					"name": "/topic/id",
+					"name": "/topics/id",
 					"id": "0d9f1773-d430-4d99-85f3-0df743722cf7",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -60,7 +60,7 @@
 					"response": []
 				},
 				{
-					"name": "/topic/id",
+					"name": "/topics/id",
 					"id": "1b134b76-9750-4724-937c-e71aea9c1d92",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -87,6 +87,19 @@
 					"request": {
 						"method": "GET",
 						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "/topics/",
+					"id": "ad5bb8b4-1704-4148-859a-029dcb1b5bba",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{host}}/topics/java/courses/"
 					},
 					"response": []
 				},
