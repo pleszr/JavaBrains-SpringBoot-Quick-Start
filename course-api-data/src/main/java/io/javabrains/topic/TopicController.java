@@ -1,9 +1,9 @@
-package io.javabrains.springbootstarter.topic;
-
-import java.util.List;
+package io.javabrains.topic;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 public class TopicController {
@@ -16,7 +16,7 @@ public class TopicController {
 		return topicService.getAllTopics();
 	}
 	
-	@RequestMapping("/topic/{foo}")
+	@RequestMapping("/topics/{foo}")
 	public Topic getTopic(@PathVariable("foo") String id) {
 		return topicService.getTopic(id);
 	}
@@ -26,12 +26,12 @@ public class TopicController {
 		topicService.addTopic(topic);
 	}
 
-	@RequestMapping(method = RequestMethod.PUT,value = "/topic/{id}")
+	@RequestMapping(method = RequestMethod.PUT,value = "/topics/{id}")
 	public void updateTopic(@RequestBody Topic topic, @PathVariable String id) {
-		topicService.updateTopic(topic,id);
+		topicService.updateTopic(topic);
 	}
 
-	@RequestMapping(method = RequestMethod.DELETE,value = "/topic/{id}")
+	@RequestMapping(method = RequestMethod.DELETE,value = "/topics/{id}")
 	public void deleteTopic(@PathVariable String id) {
 		topicService.deleteTopic(id);
 	}
