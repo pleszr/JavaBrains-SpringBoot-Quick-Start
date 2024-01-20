@@ -68,7 +68,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "http://localhost:8080/topic/java"
+						"url": "{{host}}/topics/java"
 					},
 					"response": []
 				}
