@@ -16,7 +16,8 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "{{host}}/topics"
 					},
 					"response": []
 				},
@@ -29,6 +30,15 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"java\",\n    \"name\": \"APIs\",\n    \"description\": \"Application programming interface\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": "{{host}}/topics"
 					},
 					"response": []
@@ -42,7 +52,16 @@
 					"request": {
 						"method": "PUT",
 						"header": [],
-						"url": "{{host}}/topics"
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": \"spring\",\n        \"name\": \"Spring Framework\",\n        \"description\": \"Spring Framework Description - Updated\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/topics/spring"
 					},
 					"response": []
 				},
@@ -55,7 +74,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8080/topic/java"
+						"url": "{{host}}/topics/spring"
 					},
 					"response": []
 				},
@@ -86,7 +105,8 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "{{host}}/topics/java/courses"
 					},
 					"response": []
 				},
@@ -99,7 +119,7 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{host}}/topics/java/courses/"
+						"url": "{{host}}/topics/java/courses/course3"
 					},
 					"response": []
 				},
@@ -112,7 +132,16 @@
 					"request": {
 						"method": "POST",
 						"header": [],
-						"url": "{{host}}/topics"
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"course3\",\n    \"name\": \"APIs\",\n    \"description\": \"Application programming interface\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{host}}/topics/java/courses"
 					},
 					"response": []
 				}
@@ -127,7 +156,8 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": "http://localhost:9001/actuator/health"
 			},
 			"response": []
 		}
